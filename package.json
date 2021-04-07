@@ -1,0 +1,19 @@
+{
+  "name": "lupoweb",
+  "version": "1.0.0",
+  "description": "Official Website + Dashboard of the LupoBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LupoBot/LupoWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LupoBot/LupoWeb/issues"
+  },
+  "homepage": "https://github.com/LupoBot/LupoWeb#readme"
+}
