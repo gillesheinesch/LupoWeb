@@ -1,4 +1,6 @@
+export_languages: ["de_DE"]
+append_commit_message: false
+commit_message: 'New translations from Crowdin'
 files:
   - source: /locales/src/website.json
     translation: /locales/%locale%.json
-    update_option: update_as_unapproved
