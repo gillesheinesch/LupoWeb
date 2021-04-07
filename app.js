@@ -12,7 +12,9 @@ const compression = require('compression');
 const helmet = require('helmet');
 require('dotenv').config();
 
-const lang_english = require('./locales/en-US');
+const localesRouter = require('./routes/locales');
+
+const lang_english = require('./locales/en_US');
 
 const app = express();
 
@@ -28,9 +30,9 @@ app.set('view engine', 'handlebars');
 
 // i18n configuration
 i18n.configure({
-  locales: ['en-US', 'de-DE', 'fr-FR', 'lb-LU'],
+  locales: ['en_US', 'de-DE', 'fr-FR', 'lb-LU'],
   directory: `${__dirname}/locales`,
-  defaultLocale: 'en-US',
+  defaultLocale: 'en_US',
   cookie: 'ulang',
 });
 
@@ -76,21 +78,20 @@ app.use(async (req, res, next) => {
   next();
 });
 
-/* GET en page. */
-app.all('/en/?*', async (req, res, next) => {
-  await res.cookie('ulang', 'en-US', {
+/* GET en_US page. */
+app.all('/en_US/?*', async (req, res, next) => {
+  await res.cookie('ulang', 'en_US', {
     httpOnly: true,
     expires: new Date(Date.now() + 3.154e+10),
   });
 
   res.locals.lang = lang_english;
-  res.locals.longLangCode = 'en-US';
-  res.locals.langCode = 'en';
+  res.locals.longLangCode = 'en_US';
   next();
 });
 
 
-app.use('/en', localesRouter);
+app.use('/en_US', localesRouter);
 app.use('/', localesRouter);
 
 // catch 404 and forward to error handler
