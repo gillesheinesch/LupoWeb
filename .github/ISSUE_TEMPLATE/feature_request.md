@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Request a feature for LenoxBot
+about: Request a feature for LupoBot
 title: ''
 labels: 't: enhancement'
 assignees: ''
