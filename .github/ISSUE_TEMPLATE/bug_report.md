@@ -1,32 +1,41 @@
 ---
-name: Bug report
+name: "\U0001F41B Bug report"
 about: Create a report to help us improve
-title: ''
-labels: 't: bugreport'
-assignees: ''
 
 ---
 
-**What is the title of your bugreport?**
+<!--
+Thank you for reporting an issue.
 
+This issue tracker is for bugs and issues found within LupoWeb.
+-->
 
-**Is it a bugreport for the website or for the bot?**
+* **Version of LupoWeb**:
+* **Device**:
 
-- [ ] Bot
-- [ ] Website
+### What steps will reproduce the bug?
 
-**How can you reproduce the bug? (Explain in steps)**
-Steps to reproduce the behavior:
+<!--
+Enter details about your bug, preferably a simple code snippet that can be
+run using `node` directly without installing third-party dependencies.
+-->
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### How often does it reproduce? Is there a required condition?
 
-**Which result would normally have to be?**
+### What is the expected behavior?
 
+<!--
+If possible please provide textual output instead of screenshots.
+-->
 
-**What happens if you do the action now?**
+### What do you see instead?
 
+<!--
+If possible please provide textual output instead of screenshots.
+-->
 
-**Additional context**
+### Additional information
+
+<!--
+Tell us anything else you think we should know.
+-->

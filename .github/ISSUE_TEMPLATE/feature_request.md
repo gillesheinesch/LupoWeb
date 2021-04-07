@@ -1,21 +1,20 @@
 ---
-name: Feature request
-about: Request a feature for LupoBot
-title: ''
-labels: 't: enhancement'
-assignees: ''
+name: "\U0001F680 Feature request"
+about: Suggest an idea for this project
 
 ---
 
-**What is the title of your proposal?**
+<!--
+Thank you for suggesting an idea to make Node.js better.
 
+Please fill in as much of the template below as you're able.
+-->
 
-**Is it a suggestion for the website or for the bot?**
+**Is your feature request related to a problem? Please describe.**
+Please describe the problem you are trying to solve.
 
-- [ ] Bot
-- [ ] Website
+**Describe the solution you'd like**
+Please describe the desired behavior.
 
-**Explain your proposal more accurately (It's best to give as much information as possible, so that we can implement the proposal better)**
-
-
-**Why should we add this feature?**
+**Describe alternatives you've considered**
+Please describe alternative solutions or features you have considered.
