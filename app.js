@@ -50,7 +50,7 @@ app.set('trust proxy', 1);
 //   }),
 // }));
 
-app.use(helmet());
+// app.use(helmet());
 app.use(logger('dev'));
 app.use(fileUpload());
 app.use(compression());
