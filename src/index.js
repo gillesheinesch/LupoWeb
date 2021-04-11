@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import 'bootstrap/dist/css/bootstrap.css';
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch } from "react-router-dom";
+
+const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={hist}>
+    <Switch>
+      <Route path="/" component="XXX" />
+    </Switch>
+  </Router>,
   document.getElementById("root")
 );
-
-reportWebVitals();
