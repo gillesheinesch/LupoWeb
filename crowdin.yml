@@ -2,4 +2,4 @@ export_languages: ["de_DE"]
 append_commit_message: false
 files:
   - source: /locales/src/website.json
-    translation: /locales/%locale%.json
+    translation: /locales/%locale_with_underscore%.json
