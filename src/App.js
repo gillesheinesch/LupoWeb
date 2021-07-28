@@ -5,11 +5,13 @@ import HomePage from "./pages/HomePage.js";
 
 function App() {
 
-  <Router>
-    <TopNavbar />
-    <Route path="**" component={() => <Redirect to="/"/>} />
-    <Route exact path="/" component={HomePage} />
-  </Router>
+  return (
+    <Router>
+      <TopNavbar />
+      <Route path="**" component={() => <Redirect to="/"/>} />
+      <Route exact path="/" component={HomePage} />
+    </Router>
+  )
 }
 
 export default App;
