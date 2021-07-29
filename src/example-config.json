@@ -1,0 +1,5 @@
+{
+    "apiBaseUrl": "Rest API Base URL",
+    "clientId": "Discord Client ID",
+    "redirectUri": "OAuth2 Redirect Login URL"
+}
