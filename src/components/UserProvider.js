@@ -16,38 +16,37 @@ const UserProvider = ({ children }) => {
 
     let location = useLocation();
     useEffect(() => {
-        checkLoggedIn();
-    }, [location]);
-
-    const checkLoggedIn = async () => {
-        let cookies = new Cookies();
-        let cookieMissing = false;
-        let requiredCookies = ["lupobot_token", "lupobot_id"];
-        requiredCookies.forEach(cookie => {
-            if (!cookies.get(cookie)) {
-                cookieMissing = true;
-            }
-        });
-
-        if (cookieMissing) {
-            setLoggedIn(false);
-            setLoading(false);
-        } else {
-            sendRequest('/users/' + cookies.get('lupobot_id')).then(res => {
-                if (res.data.cookiesToken === cookies.get('lupobot_token')) {
-                    setUserData(res.data);
-                    setId(cookies.get('lupobot_id'));
-                    setToken(res.data.cookiesToken);
-                    setAvatar(res.data.avatarUrl);
-
-                    setLoggedIn(true);
-                    setLoading(false);
-                } else {
-                    history.push('/logout');
+        const checkLoggedIn = async () => {
+            let cookies = new Cookies();
+            let cookieMissing = false;
+            let requiredCookies = ["lupobot_token", "lupobot_id"];
+            requiredCookies.forEach(cookie => {
+                if (!cookies.get(cookie)) {
+                    cookieMissing = true;
                 }
-            });  
+            });
+    
+            if (cookieMissing) {
+                setLoggedIn(false);
+                setLoading(false);
+            } else {
+                sendRequest('/users/' + cookies.get('lupobot_id')).then(res => {
+                    if (res.data.cookiesToken === cookies.get('lupobot_token')) {
+                        setUserData(res.data);
+                        setId(cookies.get('lupobot_id'));
+                        setToken(res.data.cookiesToken);
+                        setAvatar(res.data.avatarUrl);
+    
+                        setLoggedIn(true);
+                        setLoading(false);
+                    } else {
+                        history.push('/logout');
+                    }
+                });  
+            }
         }
-    }
+        checkLoggedIn();
+    }, [location, history]);
 
     if (loading) {
         return (

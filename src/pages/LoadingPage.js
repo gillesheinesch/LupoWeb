@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Loader } from "rsuite";
 
 function LoadingPage() {
-    const [text, setText] = useState("Please wait a moment ...");
+    const { t } = useTranslation();
+    const [text, setText] = useState(t('loadingpage_wait-a-moment'));
     setTimeout(() => {
-        setText("Loading takes longer than usual ...")
+        setText(t('loadingpage_longer-than-usual'));
     }, 3000);
 
     return (
