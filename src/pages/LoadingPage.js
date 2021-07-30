@@ -10,7 +10,7 @@ function LoadingPage() {
     }, 3000);
 
     return (
-        <Loader center style={{ color: "blue" }} size="lg" content={ text } vertical/>
+        <Loader center size="lg" content={ text } vertical/>
     )
 }
 

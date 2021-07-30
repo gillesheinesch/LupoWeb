@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Avatar, Button, Dropdown, Icon, Nav } from "rsuite";
+import { Avatar, Button, Dropdown, IconButton, Message, Nav, toaster, Tooltip, Whisper } from "rsuite";
 import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
 import { config } from "../App.js";
@@ -9,6 +9,7 @@ import { resources } from "../i18n.js";
 import i18next from "i18next";
 import Flag from "react-flagkit";
 import CookieConsent from "react-cookie-consent";
+import { toggleTheme } from "..";
 
 function TopNavbar() {
   const { t } = useTranslation();
@@ -38,15 +39,18 @@ function TopNavbar() {
          </Nav>
         : <Button appearance="primary" href={ "https://discord.com/api/oauth2/authorize?client_id=" + config.clientId + "&redirect_uri=" + config.redirectUri + "&response_type=code&scope=identify%20guilds" }>
             <i className="fab fa-discord"></i> { t('topnavbar_sign-in') }  
-          </Button>
+          </Button> 
       }
       <Nav>
-        <Dropdown title={ t('topnavbar_language') } icon={ <Icon icon="fas fa-language"/> } >
+        <Dropdown title={ " " + t('topnavbar_language') } icon={ <i className="fas fa-language"></i> } >
           { Object.keys(resources).map(renderLanguage) }
         </Dropdown>
+        <Whisper placement="bottom" controlId="control-id-hover" trigger="hover" speaker={ <Tooltip>{ t('topnavbar_theme-tooltip') }</Tooltip> }>
+          <IconButton appearance="subtle" onClick={ () => toggleTheme() } icon={ <i className="fas fa-moon"></i> } />
+        </Whisper>
       </Nav>
 
-      <CookieConsent overlay onAccept={ () => { Alert.success(t('cookieconsent_accept-alert')) }} buttonText={ t('cookieconsent_accept-button') }>{ t('cookieconsent_info-text') }</CookieConsent>
+      <CookieConsent overlay onAccept={ () => { toaster.push( <Message showIcon type="success" closeable>{ t('cookieconsent_accept-alert') }</Message>) }} buttonText={ t('cookieconsent_accept-button') }>{ t('cookieconsent_info-text') }</CookieConsent>
     </div>
   )
 }
