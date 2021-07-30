@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Dropdown, Icon, Nav } from "rsuite";
+import { Alert, Avatar, Button, Dropdown, Icon, Nav } from "rsuite";
 import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
 import { config } from "../App.js";
@@ -8,6 +8,7 @@ import "./TopNavbar.css";
 import { resources } from "../i18n.js";
 import i18next from "i18next";
 import Flag from "react-flagkit";
+import CookieConsent from "react-cookie-consent";
 
 function TopNavbar() {
   const { t } = useTranslation();
@@ -44,6 +45,8 @@ function TopNavbar() {
           { Object.keys(resources).map(renderLanguage) }
         </Dropdown>
       </Nav>
+
+      <CookieConsent overlay onAccept={ () => { Alert.success(t('cookieconsent_accept-alert')) }} buttonText={ t('cookieconsent_accept-button') }>{ t('cookieconsent_info-text') }</CookieConsent>
     </div>
   )
 }

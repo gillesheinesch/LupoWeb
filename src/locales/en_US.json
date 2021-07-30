@@ -5,5 +5,8 @@
     "topnavbar_sign-in": "Login",
     "topnavbar_language": "Language",
     "loadingpage_wait-a-moment": "Please wait a moment ...",
-    "loadingpage_longer-than-usual": "Loading takes longer than usual ..."
+    "loadingpage_longer-than-usual": "Loading takes longer than usual ...",
+    "cookieconsent_accept-button": "I accept",
+    "cookieconsent_accept-alert": "Successfully accepted cookies",
+    "cookieconsent_info-text": "This website uses cookies to enhance the user experience."
 }
