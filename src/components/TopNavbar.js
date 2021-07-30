@@ -14,7 +14,6 @@ function TopNavbar() {
   const { isLoggedIn, userData, avatar } = useUser();
   const history = useHistory();
 
-  console.log(i18next.languages);
   const renderLanguage = (lng) => {
     let regionNames = new Intl.DisplayNames([lng.split("_")[0]], {type: 'region'});
     return (
