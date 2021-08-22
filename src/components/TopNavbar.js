@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Dropdown, IconButton, Message, Nav, toaster, Tooltip, Whisper } from "rsuite";
+import { Avatar, Button, Dropdown, IconButton, Message, Nav, Navbar, toaster, Tooltip, Whisper } from "rsuite";
 import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
 import { config } from "../App.js";
@@ -25,22 +25,34 @@ function TopNavbar() {
 
   return (
     <div>
-      { isLoggedIn
-        ? <Nav>
-            <Dropdown trigger={ ['click', 'hover'] } icon={ <Avatar circle src={ avatar } alt="Avatar" size="xs" /> }>
-              <Dropdown.Item panel style={{ padding: 10, width: 160 }}>
-                <p>{ t('topnavbar_signed-in-name') }</p>
-                <strong>{ userData.asTag }</strong>
-              </Dropdown.Item>
-              <Dropdown.Item divider />
-              <Dropdown.Item onSelect={ () => history.push('/dashboard') }>{ t('topnavbar_dashboard') }</Dropdown.Item>
-              <Dropdown.Item onSelect={ () => history.push('/logout') }>{ t('topnavbar_sign-out') }</Dropdown.Item>
-            </Dropdown>
-         </Nav>
-        : <Button appearance="primary" href={ "https://discord.com/api/oauth2/authorize?client_id=" + config.clientId + "&redirect_uri=" + config.redirectUri + "&response_type=code&scope=identify%20guilds" }>
-            <i className="fab fa-discord"></i> { t('topnavbar_sign-in') }  
-          </Button> 
-      }
+      <Navbar className="navbar">
+        <Nav>
+          <Nav.Item onSelect={ () => history.push('/') }>Home</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/pluginstore') }>Plugin Store</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }>Support</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }>Invite</Nav.Item>
+        </Nav>
+        <Nav pullRight>
+          { isLoggedIn
+            ? <Nav>
+                <Dropdown trigger={ ['click', 'hover'] } icon={ <Avatar circle src={ avatar } alt="Avatar" size="xs" /> }>
+                  <Dropdown.Item panel style={{ padding: 10, width: 160 }}>
+                    <p>{ t('topnavbar_signed-in-name') }</p>
+                    <strong>{ userData.asTag }</strong>
+                  </Dropdown.Item>
+                  <Dropdown.Item divider />
+                  <Dropdown.Item onSelect={ () => history.push('/dashboard') }>{ t('topnavbar_dashboard') }</Dropdown.Item>
+                  <Dropdown.Item onSelect={ () => history.push('/logout') }>{ t('topnavbar_sign-out') }</Dropdown.Item>
+                </Dropdown>
+            </Nav>
+            : <Button appearance="primary" href={ "https://discord.com/api/oauth2/authorize?client_id=" + config.clientId + "&redirect_uri=" + config.redirectUri + "&response_type=code&scope=identify%20guilds" }>
+                <i className="fab fa-discord"></i> { t('topnavbar_sign-in') }  
+              </Button> 
+          }
+        </Nav>
+      </Navbar>
+
+      
       <Nav>
         <Dropdown title={ " " + t('topnavbar_language') } icon={ <i className="fas fa-language"></i> } >
           { Object.keys(resources).map(renderLanguage) }
