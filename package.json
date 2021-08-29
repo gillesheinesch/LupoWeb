@@ -7,9 +7,13 @@
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "axios": "^0.21.1",
+    "customize-cra": "^1.0.0-alpha.0",
     "i18next": "^20.3.5",
     "i18next-browser-languagedetector": "^6.1.2",
+    "less": "^3.11.1",
+    "less-loader": "^6.0.0",
     "react": "^17.0.2",
+    "react-app-rewired": "^2.1.6",
     "react-cookie-consent": "^6.2.4",
     "react-dom": "^17.0.2",
     "react-flagkit": "^2.0.4",
@@ -21,10 +25,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": [
