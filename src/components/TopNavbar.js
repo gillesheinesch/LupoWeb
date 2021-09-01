@@ -44,10 +44,12 @@ function TopNavbar() {
                   <Dropdown.Item onSelect={ () => history.push('/dashboard') }>{ t('topnavbar_dashboard') }</Dropdown.Item>
                   <Dropdown.Item onSelect={ () => history.push('/logout') }>{ t('topnavbar_sign-out') }</Dropdown.Item>
                 </Dropdown>
-            </Nav>
-            : <Button appearance="primary" href={ "https://discord.com/api/oauth2/authorize?client_id=" + config.clientId + "&redirect_uri=" + config.redirectUri + "&response_type=code&scope=identify%20guilds" }>
-                <i className="fab fa-discord"></i> { t('topnavbar_sign-in') }  
-              </Button> 
+              </Nav>
+            : <Nav>
+                <Button appearance="primary" href={ "https://discord.com/api/oauth2/authorize?client_id=" + config.clientId + "&redirect_uri=" + config.redirectUri + "&response_type=code&scope=identify%20guilds" }>
+                  <i className="fab fa-discord"></i> { t('topnavbar_sign-in') }  
+                </Button> 
+              </Nav>
           }
         </Nav>
       </Navbar>
