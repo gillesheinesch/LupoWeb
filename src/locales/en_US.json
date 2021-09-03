@@ -9,5 +9,8 @@
     "loadingpage_longer-than-usual": "Loading takes longer than usual ...",
     "cookieconsent_accept-button": "I accept",
     "cookieconsent_accept-alert": "Successfully accepted cookies",
-    "cookieconsent_info-text": "This website uses cookies to enhance the user experience."
+    "cookieconsent_info-text": "This website uses cookies to enhance the user experience.",
+    "homepage_text-loop-build-server": "Build your own Discord server!",
+    "homepage_text-loop-install-plugins": "Install plugins on your Discord server!",
+    "homepage_text-loop-plugin-range": "Big range of customizable plugins!"
 }
