@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Dropdown, IconButton, Message, Nav, Navbar, toaster, Tooltip, Whisper } from "rsuite";
+import { Avatar, Button, Dropdown, Message, Nav, Navbar, toaster } from "rsuite";
 import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
 import { config } from "../App.js";
@@ -32,6 +32,7 @@ function TopNavbar() {
           <Nav.Item onSelect={ () => history.push('/') }>Support</Nav.Item>
           <Nav.Item onSelect={ () => history.push('/') }>Invite</Nav.Item>
         </Nav>
+        
         <Nav pullRight>
           { isLoggedIn
             ? <Nav>
@@ -40,6 +41,11 @@ function TopNavbar() {
                     <p>{ t('topnavbar_signed-in-name') }</p>
                     <strong>{ userData.asTag }</strong>
                   </Dropdown.Item>
+                  <Dropdown.Item divider />
+                  <Dropdown.Menu title={ " " + t('topnavbar_language') }>
+                     { Object.keys(resources).map(renderLanguage) }
+                  </Dropdown.Menu>
+                  <Dropdown.Item onSelect={ () => toggleTheme() }>{ t('topnavbar_theme') }</Dropdown.Item>
                   <Dropdown.Item divider />
                   <Dropdown.Item onSelect={ () => history.push('/dashboard') }>{ t('topnavbar_dashboard') }</Dropdown.Item>
                   <Dropdown.Item onSelect={ () => history.push('/logout') }>{ t('topnavbar_sign-out') }</Dropdown.Item>
@@ -53,16 +59,6 @@ function TopNavbar() {
           }
         </Nav>
       </Navbar>
-
-      
-      <Nav>
-        <Dropdown title={ " " + t('topnavbar_language') } icon={ <i className="fas fa-language"></i> } >
-          { Object.keys(resources).map(renderLanguage) }
-        </Dropdown>
-        <Whisper placement="bottom" controlId="control-id-hover" trigger="hover" speaker={ <Tooltip>{ t('topnavbar_theme-tooltip') }</Tooltip> }>
-          <IconButton appearance="subtle" onClick={ () => toggleTheme() } icon={ <i className="fas fa-moon"></i> } />
-        </Whisper>
-      </Nav>
 
       <CookieConsent overlay onAccept={ () => { toaster.push( <Message showIcon type="success" closeable>{ t('cookieconsent_accept-alert') }</Message>) }} buttonText={ t('cookieconsent_accept-button') }>{ t('cookieconsent_info-text') }</CookieConsent>
     </div>
