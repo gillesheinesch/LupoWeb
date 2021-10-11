@@ -40,8 +40,12 @@ const UserProvider = ({ children }) => {
                         setLoggedIn(true);
                         setLoading(false);
                     } else {
+                        setLoading(false);
                         history.push('/logout');
                     }
+                }).catch(function (error) {
+                    setLoading(false);
+                    history.push('/logout');
                 });  
             }
         }

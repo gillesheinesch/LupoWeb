@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Avatar, Button, Dropdown, Message, Nav, Navbar, toaster } from "rsuite";
 import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
@@ -10,11 +10,17 @@ import i18next from "i18next";
 import Flag from "react-flagkit";
 import CookieConsent from "react-cookie-consent";
 import { toggleTheme } from "..";
+import { sendRequest } from "../Util";
 
 function TopNavbar() {
   const { t } = useTranslation();
   const { isLoggedIn, userData, avatar } = useUser();
   const history = useHistory();
+  const [isBotDown, setBotDown] = useState(false);
+
+  sendRequest('/bot').catch(function (error) {
+    setBotDown(true);
+  });
 
   const renderLanguage = (lng) => {
     let regionNames = new Intl.DisplayNames([lng.split("_")[0]], {type: 'region'});
@@ -25,12 +31,18 @@ function TopNavbar() {
 
   return (
     <div>
+      { isBotDown &&
+        <Message closable  showIcon type="error">
+          { t('topnavbar_error-bot-down') }
+        </Message>
+      }
+
       <Navbar className="navbar">
         <Nav>
-          <Nav.Item onSelect={ () => history.push('/') }>Home</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/pluginstore') }>Plugin Store</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/') }>Support</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/') }>Invite</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }> { t('topnavbar_home') } </Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/pluginstore') }> { t('topnavbar_plugin-store') }</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_support') }</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_invite') }</Nav.Item>
         </Nav>
         
         <Nav pullRight>
