@@ -7,6 +7,7 @@ import { UserProvider } from "./components/UserProvider";
 import { BrowserRouter as Router } from "react-router-dom";
 import LoadingPage from "./pages/LoadingPage";
 import Cookies from "universal-cookie";
+import { getCookieConsentValue } from "react-cookie-consent";
 
 const cookies = new Cookies();
 let currentTheme = '';
@@ -17,10 +18,13 @@ const setTheme = (theme) => {
   }
   document.body.classList.add(`rs-theme-${theme}`);
   currentTheme = theme;
-  cookies.remove('lupobot_theme');
-  cookies.set('lupobot_theme', currentTheme, {
-    maxAge: 315400000
-  });
+  
+  if (getCookieConsentValue()) {
+    cookies.remove('lupobot_theme');
+    cookies.set('lupobot_theme', currentTheme, {
+      maxAge: 315400000
+    });
+  }
 }
 const toggleTheme = () => {
   if (currentTheme === 'dark') {
