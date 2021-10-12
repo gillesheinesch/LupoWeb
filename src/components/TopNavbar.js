@@ -41,8 +41,7 @@ function TopNavbar() {
         <Nav>
           <Nav.Item onSelect={ () => history.push('/') }> { t('topnavbar_home') } </Nav.Item>
           <Nav.Item onSelect={ () => history.push('/pluginstore') }> { t('topnavbar_plugin-store') }</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_support') }</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_invite') }</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_status') }</Nav.Item>
         </Nav>
         
         <Nav pullRight>

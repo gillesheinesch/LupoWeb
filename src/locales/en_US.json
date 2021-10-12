@@ -1,8 +1,7 @@
 {
     "topnavbar_home": "Home",
     "topnavbar_plugin-store": "Plugin Store",
-    "topnavbar_support": "Support",
-    "topnavbar_invite": "Invite",
+    "topnavbar_status": "Status",
     "topnavbar_error-bot-down": "The Discord bot is currently down. A reason for this may be schedueled maintenance or system failure. Therefore, many parts of our website and also the login are not working. We apologize for any inconvenience and ask for your patience!",
     "topnavbar_signed-in-name": "Signed in as",
     "topnavbar_dashboard": "Dashboard",
@@ -18,6 +17,10 @@
     "homepage_text-loop-build-server": "Build your own Discord server!",
     "homepage_text-loop-install-plugins": "Install plugins on your Discord server!",
     "homepage_text-loop-plugin-range": "Big range of customizable plugins!",
+    "homepage_text-loop-realize-suggestions": "We realize your suggestions!",
+    "homepage_slogan": "An all-in-all Discord bot that offers many cool new features in plugins which you can install to your Discord server!",
+    "homepage_buttonbar-invite": "Invite me to your Discord server",
+    "homepage_buttonbar-support": "Questions? Issues? Get support on our server",
     "imprint": "Legal notice",
     "privacy": "Privacy statement"
 }
