@@ -1,7 +1,7 @@
 name: Pages Deploy
 on:
   push:
-    branches: [ master ]
+    branches: [ deploy ]
 jobs:
   build:
     runs-on: ubuntu-latest
