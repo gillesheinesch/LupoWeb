@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import TextLoop from "react-text-loop";
 import CountUp from 'react-countup';
 import { useTranslation } from "react-i18next";
@@ -12,6 +12,7 @@ import PeoplesIcon from '@rsuite/icons/Peoples';
 import CodeIcon from '@rsuite/icons/Code';
 import StorageIcon from '@rsuite/icons/Storage';
 import MiniProgramIcon from '@rsuite/icons/MiniProgram';
+import CheckIcon from '@rsuite/icons/Check';
 
 function HomePage() {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ function HomePage() {
   const [servers, setServers] = useState(0);
   const [commands, setCommands] = useState(0);
   const [plugins, setPlugins] = useState(0);
+  const [pluginNames, setPluginNames] = useState("");
 
   useEffect(() => {
     sendRequest('/users/total').then(res => {
@@ -33,6 +35,9 @@ function HomePage() {
     });
     sendRequest('/plugins').then(res => {
       setPlugins(Object.keys(res.data).length);
+      Object.keys(res.data).forEach(key => {
+        setPluginNames(prevPluginNames => prevPluginNames + res.data[key].translatedNames.en_US + ", ");
+      });
     });
   }, []);
 
@@ -59,6 +64,14 @@ function HomePage() {
                     { t('homepage_buttonbar-support') }
                   </IconButton>
                 </ButtonToolbar>
+                <p style={{fontSize: '15px', marginTop: '2em',}}>
+                  <CheckIcon style={{color: '#88FF00', marginRight: '1em'}}/>
+                  { t('homepage_check-plugins', { plugins: pluginNames.substring(0, pluginNames.length-2) }) }
+                </p>
+                <p style={{fontSize: '15px', marginTop: '0.5em',}}>
+                  <CheckIcon style={{color: '#88FF00', marginRight: '1em'}}/>
+                  { t('homepage_check-community') }
+                </p>
               </Col>
 
               <Col xsHidden smHidden mdHidden lg={12}>
@@ -69,30 +82,33 @@ function HomePage() {
             </Row>
           </Animation.Slide>
 
-          <Row style={{marginTop: '6em'}}>
-            <Col md={6} sm={12}>
+          <Row style={{marginTop: '6em', marginBottom: '5em'}}>
+            <Col lg={6} sm={24} xs={24}>
               <Panel bordered header={<> <PeoplesIcon /> { t('homepage_stats-users') } </>}>
                 <h3><CountUp start={0} end={users} duration={2.75} /></h3>
               </Panel>
             </Col>
-            <Col md={6} sm={12}>
+            <Col lg={6} sm={24} xs={24}>
               <Panel bordered header={<> <StorageIcon /> { t('homepage_stats-servers') } </>}>
                <h3><CountUp start={0} end={servers} duration={2.75} /></h3>
               </Panel>
             </Col>
-            <Col md={6} sm={12}>
+            <Col lg={6} sm={24} xs={24}>
               <Panel bordered header={<> <CodeIcon /> { t('homepage_stats-commands') } </>}>
                 <h3><CountUp start={0} end={commands} duration={2.75} /></h3>
               </Panel>
             </Col>
-            <Col md={6} sm={12}>
+            <Col lg={6} sm={24} xs={24}>
               <Panel bordered header={<> <MiniProgramIcon /> { t('homepage_stats-plugins') } </>}>
                <h3><CountUp start={0} end={plugins} duration={2.75} /></h3>
               </Panel>
             </Col>
           </Row>
         </FlexboxGrid.Item>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF6431" fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,224C640,235,800,213,960,192C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
     </FlexboxGrid>
+    
   )
 }
 

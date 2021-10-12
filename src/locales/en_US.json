@@ -21,6 +21,8 @@
     "homepage_slogan": "An all-in-all Discord bot that offers many cool new features in plugins which you can install to your Discord server!",
     "homepage_buttonbar-invite": "Invite me to your Discord server",
     "homepage_buttonbar-support": "Questions? Issues? Get support on our server",
+    "homepage_check-plugins": "Wide range of plugins and features: {{plugins}}",
+    "homepage_check-community": "We love our community: Join our support Discord server and tell us your suggestions or report bugs",
     "homepage_stats-users": "Users",
     "homepage_stats-servers": "Servers",
     "homepage_stats-commands": "Commands",
