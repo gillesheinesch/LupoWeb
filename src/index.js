@@ -17,7 +17,10 @@ const setTheme = (theme) => {
   }
   document.body.classList.add(`rs-theme-${theme}`);
   currentTheme = theme;
-  cookies.set('lupobot_theme', currentTheme);
+  cookies.remove('lupobot_theme');
+  cookies.set('lupobot_theme', currentTheme, {
+    maxAge: 315400000
+  });
 }
 const toggleTheme = () => {
   if (currentTheme === 'dark') {

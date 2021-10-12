@@ -14,8 +14,12 @@ function LoginPage() {
     if (code != null) {
         sendRequest('/oauth2?code=' + code + '&redirect=' + config.redirectUri).then(res => {
             if (res.data.id != null) {
-                cookies.set('lupobot_id', res.data.id); 
-                cookies.set('lupobot_token', code);
+                cookies.set('lupobot_id', res.data.id, {
+                    maxAge: 315400000
+                }); 
+                cookies.set('lupobot_token', code, {
+                    maxAge: 315400000
+                }); 
             }
             history.push('/');
         });
