@@ -12,6 +12,8 @@ import CookieConsent from "react-cookie-consent";
 import { toggleTheme } from "..";
 import { sendRequest } from "../Util";
 
+import logo from "../logo.svg";
+
 function TopNavbar() {
   const { t } = useTranslation();
   const { isLoggedIn, userData, avatar } = useUser();
@@ -38,10 +40,13 @@ function TopNavbar() {
       }
 
       <Navbar className="navbar">
+        <Navbar.Brand onClick={ () => history.push('/') }>
+          <img src={logo} alt="Logo" width="30" height="30" />
+        </Navbar.Brand> 
         <Nav>
           <Nav.Item onSelect={ () => history.push('/') }> { t('topnavbar_home') } </Nav.Item>
           <Nav.Item onSelect={ () => history.push('/pluginstore') }> { t('topnavbar_plugin-store') }</Nav.Item>
-          <Nav.Item onSelect={ () => history.push('/') }>{ t('topnavbar_status') }</Nav.Item>
+          <Nav.Item onSelect={ () => history.push('/status') }>{ t('topnavbar_status') }</Nav.Item>
         </Nav>
         
         <Nav pullRight>
