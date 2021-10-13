@@ -37,6 +37,8 @@
     "plugindetails_command-permission": "Permission",
     "pluginstorepage_search": "Search",
     "pluginstorepage_search-placeholder": "Enter plugin name",
-    "imprint": "Legal notice",
-    "privacy": "Privacy statement"
+    "footer_add-discord": "Add to your Discord",
+    "footer_support-server": "Support Server",
+    "imprint": "Legal Notice",
+    "privacy": "Privacy Policy"
 }

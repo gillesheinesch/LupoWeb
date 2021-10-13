@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Col, Loader, Panel, Row } from 'rsuite';
 import { sendRequest } from '../Util';
-import "../style.css";
 import i18n from "../i18n.js";
 import { withRouter } from "react-router";
 

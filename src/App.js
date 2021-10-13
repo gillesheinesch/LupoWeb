@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Footer from "./components/Footer.js";
 import HomePage from "./pages/HomePage.js";
 import LoginPage from "./pages/LoginPage.js";
 import LogoutPage from "./pages/LogoutPage.js";
@@ -27,6 +28,7 @@ function App() {
         
         <Route path="**" component={() => <Redirect to="/"/>} />
       </Switch>
+      <Footer />
     </Fragment>
   )
 }

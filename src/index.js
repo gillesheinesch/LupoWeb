@@ -1,13 +1,14 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "rsuite/styles/index.less";
-import './i18n';
 import { UserProvider } from "./components/UserProvider";
 import { BrowserRouter as Router } from "react-router-dom";
 import LoadingPage from "./pages/LoadingPage";
 import Cookies from "universal-cookie";
 import { getCookieConsentValue } from "react-cookie-consent";
+import "rsuite/styles/index.less";
+import './i18n';
+import "./style.css";
 
 const cookies = new Cookies();
 let currentTheme = '';

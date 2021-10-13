@@ -68,11 +68,11 @@ function HomePage() {
                     </IconButton>
                   </ButtonToolbar>
                   <p style={{fontSize: '15px', marginTop: '2em',}}>
-                    <CheckIcon style={{color: '#88FF00', marginRight: '1em'}}/>
+                    <CheckIcon style={{color: '#4CAF50', marginRight: '1em'}}/>
                     { t('homepage_check-plugins', { plugins: pluginNames.substring(0, pluginNames.length-2) }) }
                   </p>
                   <p style={{fontSize: '15px', marginTop: '0.5em',}}>
-                    <CheckIcon style={{color: '#88FF00', marginRight: '1em'}}/>
+                    <CheckIcon style={{color: '#4CAF50', marginRight: '1em'}}/>
                     { t('homepage_check-community') }
                   </p>
                 </Col>

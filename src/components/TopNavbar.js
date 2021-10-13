@@ -4,14 +4,12 @@ import { useUser } from "./UserProvider";
 import { useHistory } from "react-router-dom";
 import { config } from "../App.js";
 import { useTranslation } from "react-i18next";
-import "./TopNavbar.css";
 import { resources } from "../i18n.js";
 import i18next from "i18next";
 import Flag from "react-flagkit";
 import CookieConsent from "react-cookie-consent";
 import { toggleTheme } from "..";
 import { sendRequest } from "../Util";
-
 import logo from "../logo.svg";
 
 function TopNavbar() {
