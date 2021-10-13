@@ -87,22 +87,22 @@ function HomePage() {
 
             <Row style={{marginTop: '6em', marginBottom: '5em'}}>
               <Col lg={6} sm={24} xs={24}>
-                <Panel bordered header={<> <PeoplesIcon /> { t('homepage_stats-users') } </>}>
+                <Panel shaded bordered header={<> <PeoplesIcon /> { t('homepage_stats-users') } </>}>
                   <h3><CountUp start={0} end={users} duration={2.75} /></h3>
                 </Panel>
               </Col>
               <Col lg={6} sm={24} xs={24}>
-                <Panel bordered header={<> <StorageIcon /> { t('homepage_stats-servers') } </>}>
+                <Panel shaded bordered header={<> <StorageIcon /> { t('homepage_stats-servers') } </>}>
                 <h3><CountUp start={0} end={servers} duration={2.75} /></h3>
                 </Panel>
               </Col>
               <Col lg={6} sm={24} xs={24}>
-                <Panel bordered header={<> <CodeIcon /> { t('homepage_stats-commands') } </>}>
+                <Panel shaded bordered header={<> <CodeIcon /> { t('homepage_stats-commands') } </>}>
                   <h3><CountUp start={0} end={commands} duration={2.75} /></h3>
                 </Panel>
               </Col>
               <Col lg={6} sm={24} xs={24}>
-                <Panel bordered header={<> <MiniProgramIcon /> { t('homepage_stats-plugins') } </>}>
+                <Panel shaded bordered header={<> <MiniProgramIcon /> { t('homepage_stats-plugins') } </>}>
                 <h3><CountUp start={0} end={plugins} duration={2.75} /></h3>
                 </Panel>
               </Col>
