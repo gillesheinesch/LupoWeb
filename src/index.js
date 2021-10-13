@@ -26,6 +26,14 @@ const setTheme = (theme) => {
       maxAge: 315400000
     });
   }
+
+  const reloadCount = sessionStorage.getItem('reloadCount');
+  if(window.location.pathname === "/status" && reloadCount < 2) {
+    sessionStorage.setItem('reloadCount', String(reloadCount + 1));
+    window.location.reload();
+  } else {
+    sessionStorage.removeItem('reloadCount');
+  }
 }
 const toggleTheme = () => {
   if (currentTheme === 'dark') {

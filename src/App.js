@@ -3,6 +3,7 @@ import Footer from "./components/Footer.js";
 import HomePage from "./pages/HomePage.js";
 import LoginPage from "./pages/LoginPage.js";
 import LogoutPage from "./pages/LogoutPage.js";
+import StatusPage from "./pages/StatusPage.js";
 import { Redirect, Route, Switch } from "react-router-dom";
 import ImprintPage from "./pages/ImprintPage.js";
 import PrivacyPage from "./pages/PrivacyPage.js";
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" component={ HomePage } />
         <Route exact path="/login" component={ LoginPage } />
         <Route exact path="/logout" component={ LogoutPage } />
+        <Route exact path="/status" component={ StatusPage } />
 
         <Route exact path="/pluginstore" component={ PluginStorePage } />
         <Route path="/pluginstore/:plugin" component={ PluginStoreInfoPage } />
