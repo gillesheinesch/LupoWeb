@@ -53,7 +53,7 @@ const Comment = styled.div`
 `;
 
 const Status = styled.div`
-  color: ${(props) => (props.active ? "#5787be" : "#2f5888")};
+  color: ${(props) => (props.active ? "#717171" : "#2f5888")};
   background-color: ${(props) =>
     props.active ? "rgba(96, 96, 96, 0.1)" : "rgba(73, 144, 226, 0.1)"};
   padding: 5px 12px;
