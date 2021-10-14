@@ -40,6 +40,8 @@ function ShardStatus() {
     useEffect(() => {
         sendRequest('/shards').then(res => {
             setShards(res.data);
+        }).catch(error => {
+            setShards(null);
         });
       }, []);
 
