@@ -280,8 +280,8 @@ function PrivacyPage() {
                         consent at any time, which shall affect all future transactions thereafter. </p>
                     <p>For more information, please consult the Facebook Terms of Use and the Facebook Data Privacy
                         Policies. Use these links to access this information: <a href="https://www.facebook.com/about/privacy/"
-                            target="_blank" rel="noopener">https://www.facebook.com/about/privacy/</a> and <a href="https://www.facebook.com/legal/terms/"
-                            target="_blank" rel="noopener">https://www.facebook.com/legal/terms/</a>.</p>
+                            target="_blank" rel="noreferrer">https://www.facebook.com/about/privacy/</a> and <a href="https://www.facebook.com/legal/terms/"
+                            target="_blank" rel="noreferrer">https://www.facebook.com/legal/terms/</a>.</p>
                     <h3>Processing of data (customer and contract data)</h3>
                     <p>We collect, process and use personal data only to the extent necessary for the establishment,
                         content organization or change of the legal relationship (data inventory). These actions are
@@ -334,7 +334,7 @@ function PrivacyPage() {
                         Way, Menlo Park, California 94025, USA, on our website. You will be able to recognise Facebook
                         plug-ins by the Facebook logo or the "Like" button on our website. An overview of the Facebook
                         plug-ins is available under the following link: <a href="https://developers.facebook.com/docs/plugins/"
-                            target="_blank" rel="noopener">https://developers.facebook.com/docs/plugins/</a>.</p>
+                            target="_blank" rel="noreferrer">https://developers.facebook.com/docs/plugins/</a>.</p>
                     <p>Whenever you visit our website and its pages, the plug-in will establish a direct connection
                         between your browser and the Facebook server. As a result, Facebook will receive the
                         information that you have visited our website with your plug-in. However, if you click the
@@ -344,7 +344,7 @@ function PrivacyPage() {
                         to point out, that we as the provider of the website do not have any knowledge of the
                         transferred data and its use by Facebook. For more detailed information, please consult the
                         Data Privacy Declaration of Facebook at: <a href="https://www.facebook.com/privacy/explanation"
-                            target="_blank" rel="noopener">https://www.facebook.com/privacy/explanation</a>.</p>
+                            target="_blank" rel="noreferrer">https://www.facebook.com/privacy/explanation</a>.</p>
                     <p>If you do not want Facebook to be able to allocate your visit to our website and its pages to
                         your Facebook user account, please log out of your Facebook account while you are on our
                         website.</p>
@@ -358,11 +358,11 @@ function PrivacyPage() {
                         Twitter as well. We must point out, that we, the providers of the website and its pages do not
                         know anything about the content of the data transferred and the use of this information by
                         Twitter. For more details, please consult Twitter’s Data Privacy Declaration at: <a href="https://twitter.com/en/privacy"
-                            target="_blank" rel="noopener">https://twitter.com/en/privacy</a>.</p>
+                            target="_blank" rel="noreferrer">https://twitter.com/en/privacy</a>.</p>
                     <p>The use of Twitter plug-ins is based on Art. 6 Sect. 1 lit. f GDPR. The operator of the website
                         has a legitimate interest in being as visible as possible on social media.</p>
                     <p>You have the option to reset your data protection settings on Twitter under the account settings
-                        at <a href="https://twitter.com/account/settings" target="_blank" rel="noopener">https://twitter.com/account/settings</a>.</p>
+                        at <a href="https://twitter.com/account/settings" target="_blank" rel="noreferrer">https://twitter.com/account/settings</a>.</p>
                     <h3>Google+ plug-in</h3>
                     <p>Our website and its pages use functions of Google+; the provider is Google Inc., 1600
                         Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
@@ -398,7 +398,7 @@ function PrivacyPage() {
                     <p>The use of the Instagram plug-in is based on Art. 6 Sect. 1 lit. f GDPR. The operator of the
                         website has a legitimate interest in being as visible as possible on social media.</p>
                     <p>For more information on this subject, please consult Instagram’s Data Privacy Declaration at: <a
-                            href="https://instagram.com/about/legal/privacy/" target="_blank" rel="noopener">https://instagram.com/about/legal/privacy/</a>.</p>
+                            href="https://instagram.com/about/legal/privacy/" target="_blank" rel="noreferrer">https://instagram.com/about/legal/privacy/</a>.</p>
                     <h3>Tumblr plug-in</h3>
                     <p>Our website and its pages use buttons of the Tumblr platform. The provider is Tumblr, Inc., 35
                         East 21st St, 10th Floor, New York, NY 10010, USA.</p>
@@ -411,7 +411,7 @@ function PrivacyPage() {
                     <p>The use of the Tumblr plug-in is based on Art. 6 Sect. 1 lit. f GDPR. The operator of the
                         website has a legitimate interest in being as visible as possible on social media.</p>
                     <p>For further information on this subject, please consult Tumblr’s Data Privacy Declaration at: <a
-                            href="https://www.tumblr.com/privacy/de." target="_blank" rel="noopener">https://www.tumblr.com/privacy/de</a>.</p>
+                            href="https://www.tumblr.com/privacy/de." target="_blank" rel="noreferrer">https://www.tumblr.com/privacy/de</a>.</p>
                     <h3>LinkedIn plug-in</h3>
                     <p>Our website uses functions of the LinkedIn network. The provider is LinkedIn Corporation, 2029
                         Stierlin Court, Mountain View, CA 94043, USA.</p>
@@ -424,7 +424,7 @@ function PrivacyPage() {
                     <p>The use of the LinkedIn plug-in is based on Art. 6 Sect. 1 lit. f GDPR. The operator of the
                         website has a legitimate interest in being as visible as possible on social media.</p>
                     <p>For further information on this subject, please consult LinkedIn’s Data Privacy Declaration at:
-                        <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noopener">https://www.linkedin.com/legal/privacy-policy</a>.</p>
+                        <a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" rel="noreferrer">https://www.linkedin.com/legal/privacy-policy</a>.</p>
                     <h3>XING plug-in</h3>
                     <p>Our website uses functions of the XING network. The provider is the XING AG, Dammtorstraße
                         29-32, 20354 Hamburg, Germany.</p>
@@ -436,7 +436,7 @@ function PrivacyPage() {
                         has a legitimate interest in being as visible as possible on social media.</p>
                     <p>For more information on data protection and the XING share button please consult the Data
                         Protection Declaration of Xing at: <a href="https://www.xing.com/app/share?op=data_protection"
-                            target="_blank" rel="noopener">https://www.xing.com/app/share?op=data_protection</a>.</p>
+                            target="_blank" rel="noreferrer">https://www.xing.com/app/share?op=data_protection</a>.</p>
                     <h3>Pinterest plug-in</h3>
                     <p>We use social plug-ins of the social network Pinterest on our website. The network is operated
                         by Pinterest Inc., 808 Brannan Street, San Francisco, CA 94103-490, USA ("Pinterest").</p>
@@ -451,7 +451,7 @@ function PrivacyPage() {
                     <p>For more information concerning the purpose, scope and continue processing and use of the data
                         by Pinterest as well as your affiliated rights and options to protect your private information,
                         please consult the data privacy information of Pinterest at: <a href="https://about.pinterest.com/de/privacy-policy"
-                            target="_blank" rel="noopener">https://about.pinterest.com/en/privacy-policy</a>.</p>
+                            target="_blank" rel="noreferrer">https://about.pinterest.com/en/privacy-policy</a>.</p>
                     <h2>5. Analysis tools and advertising</h2>
                     <h3>Google Analytics</h3>
                     <p>This website uses functions of the web analysis service Google Analytics. The provider of this
@@ -482,7 +482,7 @@ function PrivacyPage() {
                         the option prevent the recording of the data generated by the cookie and affiliated with your
                         use of the website (including your IP address) by Google as well as the processing of this data
                         by Google by downloading and installing the browser plug-in available under the following link:
-                        <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="noopener">https://tools.google.com/dlpage/gaoptout?hl=en</a>.</p>
+                        <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="noreferrer">https://tools.google.com/dlpage/gaoptout?hl=en</a>.</p>
                     <p><strong>Objection to the recording of data</strong></p>
                     <p>You have the option to prevent the recording of your data by Google Analytics by clicking on the
                         following link. This will result in the placement of an opt out cookie, which prevents the
@@ -490,7 +490,7 @@ function PrivacyPage() {
                             Analytics deactivation</a>.</p>
                     <p>For more information about the handling of user data by Google Analytics, please consult
                         Google’s Data Privacy Declaration at: <a href="https://support.google.com/analytics/answer/6004245?hl=de"
-                            target="_blank" rel="noopener">https://support.google.com/analytics/answer/6004245?hl=en</a>.</p>
+                            target="_blank" rel="noreferrer">https://support.google.com/analytics/answer/6004245?hl=en</a>.</p>
                     <p><strong>Contract data processing</strong></p>
                     <p>We have executed a contract data processing agreement with Google and are implementing the
                         stringent provisions of the German data protection agencies to the fullest when using Google
@@ -544,7 +544,7 @@ function PrivacyPage() {
                         for the ads to be displayed on all devices.</p>
                     <p>You have the option to permanently object to remarketing / targeting across all devices by
                         deactivating personalized advertising in your Google account. To do this, please follow this
-                        link: <a href="https://www.google.com/settings/ads/onweb/" target="_blank" rel="noopener">https://www.google.com/settings/ads/onweb/</a>.</p>
+                        link: <a href="https://www.google.com/settings/ads/onweb/" target="_blank" rel="noreferrer">https://www.google.com/settings/ads/onweb/</a>.</p>
                     <p>The consolidation of the recorded data in your Google account shall occur exclusively based on
                         your consent, which you may give to Google and also revoke there (Art. 6 Sect. 1 lit. a GDPR).
                         Data recording processes that are not consolidated in your Google account (for instance because
@@ -554,7 +554,7 @@ function PrivacyPage() {
                         website visitor for advertising purposes.</p>
                     <p>For further information and the pertinent data protection regulations, please consult the Data
                         Privacy Policies of Google at: <a href="https://policies.google.com/technologies/ads?hl=en"
-                            target="_blank" rel="noopener">https://policies.google.com/technologies/ads?hl=en</a>.</p>
+                            target="_blank" rel="noreferrer">https://policies.google.com/technologies/ads?hl=en</a>.</p>
                     <h3>Google AdWords and Google Conversion Tracking</h3>
                     <p>This website uses Google AdWords. AdWords is an online promotional program of Google Inc., 1600
                         Amphitheatre Parkway, Mountain View, CA 94043, United States (“Google”).</p>
@@ -578,7 +578,7 @@ function PrivacyPage() {
                         in order to optimize the operator’s web offerings and advertising.</p>
                     <p>To review more detailed information about Google AdWords and Google Conversion Tracking, please
                         consult the Data Privacy Policies of Google at: <a href="https://policies.google.com/privacy?hl=en"
-                            target="_blank" rel="noopener">https://policies.google.com/privacy?hl=en</a>.</p>
+                            target="_blank" rel="noreferrer">https://policies.google.com/privacy?hl=en</a>.</p>
                     <p>You can set up your browser in such a manner that you will be notified anytime cookies are
                         placed and you can permit cookies only in certain cases or exclude the acceptance of cookies in
                         certain instances or in general and you can also activate the automatic deletion of cookies
@@ -595,21 +595,21 @@ function PrivacyPage() {
                         position to arrive at any conclusions as to the identity of users. However, Facebook archives
                         the information and processes it, so that it is possible to make a connection to the respective
                         user profile and Facebook is in a position to use the data for its own promotional purposes in
-                        compliance with the <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Facebook
+                        compliance with the <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noreferrer">Facebook
                             Data Usage Policy</a>. This enables Facebook to display ads on Facebook pages as well as in
                         locations outside of Facebook. We as the operator of this website have no control over the use
                         of such data.</p>
                     <p>The use of Facebook Pixel is based on Art. 6 Sect. 1 lit. f GDPR. The operator of the website
                         has a legitimate interest in effective advertising campaigns, which also include social media.</p>
                     <p>In Facebook’s Data Privacy Policies, you will find additional information about the protection
-                        of your privacy at: <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">https://www.facebook.com/about/privacy/</a>.</p>
+                        of your privacy at: <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noreferrer">https://www.facebook.com/about/privacy/</a>.</p>
                     <p>You also have the option to deactivate the remarketing function “Custom Audiences” in the ad
                         settings section under <a href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen"
-                            target="_blank" rel="noopener">https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen</a>.
+                            target="_blank" rel="noreferrer">https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen</a>.
                         To do this, you first have to log into Facebook.</p>
                     <p>If you do not have a Facebook account, you can deactivate any user based advertising by Facebook
                         on the website of the European Interactive Digital Advertising Alliance: <a href="http://www.youronlinechoices.com/de/praferenzmanagement/"
-                            target="_blank" rel="noopener">http://www.youronlinechoices.com/de/praferenzmanagement/</a>.</p>
+                            target="_blank" rel="noreferrer">http://www.youronlinechoices.com/de/praferenzmanagement/</a>.</p>
                     <h2>6. Newsletter</h2>
                     <h3>Newsletter data</h3>
                     <p>If you would like to subscribe to the newsletter offered on this website, we will need from you
@@ -659,7 +659,7 @@ function PrivacyPage() {
                         newsletter, the data shall be deleted from our servers as well as those of MailChimp. This
                         shall not affect data we have been archiving for other purposes.</p>
                     <p>For more details, please consult the Data Privacy Policies of MailChimp at: <a href="https://mailchimp.com/legal/terms/"
-                            target="_blank" rel="noopener">https://mailchimp.com/legal/terms/</a>.</p>
+                            target="_blank" rel="noreferrer">https://mailchimp.com/legal/terms/</a>.</p>
                     <h2>7. Plug-ins and Tools</h2>
                     <h3>YouTube</h3>
                     <p>Our website uses plug-ins of the YouTube platform, which is operated by Google. The website
@@ -678,7 +678,7 @@ function PrivacyPage() {
                     <p>The use of YouTube is based on our interest in presenting our online content in an appealing
                         manner. Pursuant to Art. 6 Sect. 1 lit. f GDPR, this is a legitimate interest.</p>
                     <p>For more information on how YouTube handles user data, please consult the YouTube Data Privacy
-                        Policy under: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">https://policies.google.com/privacy?hl=en</a>.</p>
+                        Policy under: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer">https://policies.google.com/privacy?hl=en</a>.</p>
                     <h3>Google Web Fonts (local embedding)</h3>
                     <p>This website uses so-called Web Fonts provided by Google to ensure the uniform use of fonts on
                         this site. These Google fonts are locally installed so that a connection to Google’s servers
@@ -693,7 +693,7 @@ function PrivacyPage() {
                         locations disclosed on our website easy to find. This constitutes a legitimate interest as
                         defined in Art. 6 Sect. 1 lit. f GDPR.</p>
                     <p>For more information on the handling of user data, please review Google’s Data Privacy
-                        Declaration under: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">https://policies.google.com/privacy?hl=en</a>.</p>
+                        Declaration under: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer">https://policies.google.com/privacy?hl=en</a>.</p>
                     <h3>Google reCAPTCHA</h3>
                     <p>We use “Google reCAPTCHA” (hereinafter referred to as “reCAPTCHA”) on our websites. The provider
                         is Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (“Google”).</p>
@@ -711,8 +711,8 @@ function PrivacyPage() {
                         industrial espionage systems and against SPAM.</p>
                     <p>For more information about Google reCAPTCHA and to review the Data Privacy Declaration of
                         Google, please follow these links: <a href="https://policies.google.com/privacy?hl=en" target="_blank"
-                            rel="noopener">https://policies.google.com/privacy?hl=en</a> and <a href="https://www.google.com/recaptcha/intro/android.html"
-                            target="_blank" rel="noopener">https://www.google.com/recaptcha/intro/android.html</a>.</p>
+                            rel="noreferrer">https://policies.google.com/privacy?hl=en</a> and <a href="https://www.google.com/recaptcha/intro/android.html"
+                            target="_blank" rel="noreferrer">https://www.google.com/recaptcha/intro/android.html</a>.</p>
                     <h3>SoundCloud</h3>
                     <p>We may have integrated plug-ins of the social network SoundCloud (SoundCloud Limited, Berners
                         House, 47-48 Berners Street, London W1T 3NF, Great Britain) into our websites. You will be able
@@ -729,7 +729,7 @@ function PrivacyPage() {
                     <p>We use SoundCloud on the basis of Art. 6 Sect. 1 lit. f GDPR. The website operator has a
                         legitimate interest in attaining the highest level of visibility on social media.</p>
                     <p>For more information about this, please consult SoundCloud’s Data Privacy Declaration at: <a
-                            href="https://soundcloud.com/pages/privacy" target="_blank" rel="noopener">https://soundcloud.com/pages/privacy</a>.</p>
+                            href="https://soundcloud.com/pages/privacy" target="_blank" rel="noreferrer">https://soundcloud.com/pages/privacy</a>.</p>
                     <p>If you prefer not to have your visit to our websites allocated to your SoundCloud user account
                         by SoundCloud, please log out of your SoundCloud user account before you activate content of
                         the SoundCloud plug-in.</p>
@@ -737,7 +737,7 @@ function PrivacyPage() {
                     <p>We have integrated features of the Spotify music platform into our websites. The provider is
                         Spotify AB, Birger Jarlsgatan 61, 113 56 Stockholm, Sweden. You will be able to recognise
                         Spotify plug-ins when you see the green logo on our pages. An overview of Spotify’s plug-ins
-                        can be found at: <a href="https://developer.spotify.com" target="_blank" rel="noopener">https://developer.spotify.com</a>.</p>
+                        can be found at: <a href="https://developer.spotify.com" target="_blank" rel="noreferrer">https://developer.spotify.com</a>.</p>
                     <p>The plug-in makes it possible to establish a direct connection between your browser and
                         Spotify’s server when you visit our websites. As a result, Spotify receives the information
                         that you visited our site with your IP address. If you click the Spotify button while you are
@@ -748,7 +748,7 @@ function PrivacyPage() {
                         operator has a legitimate interest in placing respective acoustic content on the operator’s
                         website.</p>
                     <p>For more information, please consult Spotify’s Data Protection Declaration under: <a href="https://www.spotify.com/us/legal/privacy-policy/"
-                            target="_blank" rel="noopener">https://www.spotify.com/us/legal/privacy-policy/</a>.</p>
+                            target="_blank" rel="noreferrer">https://www.spotify.com/us/legal/privacy-policy/</a>.</p>
                     <p>If you do not want Spotify to be able to allocate the visit of our websites to your Spotify user
                         account, please log out of your Spotify user account while visiting our sites.</p>
                     <h2>8. Payment service providers and resellers</h2>
@@ -788,8 +788,8 @@ function PrivacyPage() {
                         data. Such a revocation shall not have any impact on the effectiveness of data processing
                         transactions that occurred in the past.</p>
                     <p>For details on payments made with the instant transfer option, please follow these links: <a
-                            href="https://www.sofort.de/datenschutz.html" target="_blank" rel="noopener">https://www.sofort.de/datenschutz.html</a>
-                        and <a href="https://www.klarna.com/sofort/" target="_blank" rel="noopener">https://www.klarna.com/sofort/</a>.</p>
+                            href="https://www.sofort.de/datenschutz.html" target="_blank" rel="noreferrer">https://www.sofort.de/datenschutz.html</a>
+                        and <a href="https://www.klarna.com/sofort/" target="_blank" rel="noreferrer">https://www.klarna.com/sofort/</a>.</p>
             </div>
           </FlexboxGrid.Item>
         </FlexboxGrid>
